@@ -97,7 +97,10 @@ h3, h2 {
     color: white;
     border-top: 2px solid #3a4f50;
 }
-
+.f-btn {
+    color: #05cdf5;
+    
+}
 .fo-btn {
     position: relative;
     text-decoration: none;
@@ -194,4 +197,5 @@ color: black;
 #cop-tag {
     margin-left: 1rem;
 }
+
 

@@ -12,3 +12,11 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElement = document.querySelectorAll('.hidden');
 hiddenElement.forEach((el) => observer.observe(el));
 
+function myFunction() {
+    var x = document.getElementById("centered_nav");
+    if (x.className === "rc_nav") {
+        x.className += " responsive";
+    } else {
+        x.className = "rc_nav";
+    }
+}
