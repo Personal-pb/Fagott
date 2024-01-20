@@ -2,15 +2,40 @@ body {
     background-color: #121212;
     /* background-color: white; */
 }
-.navbar {
+/* .navbar {
     
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 40%;
     border-radius: 30px;
     border: 5px solid #05cdf5;
     margin-bottom: 3rem;    
+    margin-top: 1.7rem;
+    
+} */
+
+@media screen and (min-width: 900px){
+    .navbar {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 55%;
+        font-size: 17px;
+        padding: 20px;
+    }
+    
+    
+}
+@media screen and (max-width: 1500px) and (min-width: 900px) {
+    .navbar {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        font-size: 17px;
+        padding: 20px;
+    }
 }
 .active {
     margin-right: 20px;
@@ -19,7 +44,10 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 20%;
+    width: 15%;
+}
+.logo2 {
+    width: 100%;
 }
 .f-p {
     color: white;
@@ -101,75 +129,80 @@ h3, h2 {
     color: #05cdf5;
     
 }
-.fo-btn {
-    position: relative;
-    text-decoration: none;
-    font-weight: 400;
-    color: #05cdf5;
-    transition: all .35s ease;
-
-    &::before {
-        content: ""; 
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: #05ff37;
-        visibility: hidden;
-        -webkit-transform: scaleX(0);
-        transform: scaleX(0);
-        -webkit-transition: all 0.3s ease-in-out 0s; 
-        transition: all 0.3s ease-in-out 0s; 
-    }   
-
-    &:hover {
-        color: #05ff37;
-
+@media screen and (min-width: 900px) {
+    .fo-btn {
+        position: relative;
+        text-decoration: none;
+        font-weight: 400;
+        color: #05cdf5;
+        transition: all .35s ease;
+    
         &::before {
-            visibility: visible;
-            -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+            content: ""; 
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #05ff37;
+            visibility: hidden;
+            -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+            -webkit-transition: all 0.3s ease-in-out 0s; 
+            transition: all 0.3s ease-in-out 0s; 
         }   
-    }   
-}
-.alt-btn {
-    position: relative;
-    text-decoration: none;
-    font-weight: 400;
-    color: white;
-    transition: all .35s ease;
-
-    &::before {
-        content: ""; 
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: #05ff37;
-        visibility: hidden;
-        -webkit-transform: scaleX(0);
-        transform: scaleX(0);
-        -webkit-transition: all 0.3s ease-in-out 0s; 
-        transition: all 0.3s ease-in-out 0s; 
-    }   
-
-    &:hover {
-        color: #05ff37;
-
+    
+        &:hover {
+            color: #05ff37;
+    
+            &::before {
+                visibility: visible;
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+            }   
+        }   
+    }
+    .alt-btn {
+        position: relative;
+        text-decoration: none;
+        font-weight: 400;
+        color: white;
+        transition: all .35s ease;
+    
         &::before {
-            visibility: visible;
-            -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+            content: ""; 
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #05ff37;
+            visibility: hidden;
+            -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+            -webkit-transition: all 0.3s ease-in-out 0s; 
+            transition: all 0.3s ease-in-out 0s; 
         }   
-    }   
+    
+        &:hover {
+            color: #05ff37;
+    
+            &::before {
+                visibility: visible;
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+            }   
+        }   
+    }
+    
 }
-
 
 .toggler-color {
 background-color: #3a4f50;
 color: black;
+}
+.toggler-color:hover {
+    background-color: #05cdf5;
 }
 #myBtn {
     display: none;
@@ -197,5 +230,69 @@ color: black;
 #cop-tag {
     margin-left: 1rem;
 }
+@media screen and (min-width: 900px){
+    .navbar {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 55%;
+        font-size: 17px;
+        padding: 20px;
+    }
+     
+}
+.navbar-kep {
+    width: 25px;
+    height: 25px;
+}
+@media screen and (max-width: 900px) {
+    .fo-btn {
+        color: #05cdf5;
+    } 
+    .alt-btn {
+        color: white;
+    } 
+    
+    .alt-btn:hover {
+        color: #05cdf5;
+    }
+    .logo {
+        width: 35%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+}
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidebar a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+
+  .content {
+    transition: margin-left 0.5s;
+    padding: 16px;
+  }
 
 
