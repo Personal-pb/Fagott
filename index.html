@@ -11,8 +11,8 @@
     <title>Fagott</title>
 </head>
 <body>
-    
-    <div class="container-fluid">
+  
+    <div class="container-fluid " id="main">
       <div id="fo-box">
         <img src="logo.png" alt="" class="logo">
         <div class="container">
@@ -27,7 +27,18 @@
                     <a class="nav-link active fo-btn " aria-current="page" href="#">Kezdőlap</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active alt-btn" aria-current="page" href="#">Hangszerek</a>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link  alt-btn" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Hangszerek
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Fagott</a></li>
+                        <li><a class="dropdown-item" href="#">....</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">....</a></li>
+                      </ul>
+                    </li>
+            
                   
                 </ul>
                 <form class="d-flex nav-item">
@@ -38,13 +49,10 @@
           </div>
         </div>
         </div>
-          <div class="container">
-          
-         
-          <div class="row">
-
         
-          
+        
+          <div class="container">
+          <div class="row">
           <div class="col-lg-8">
 
           
@@ -143,7 +151,6 @@
       <button class="d-none d-sm-block" onclick="topFunction()" id="myBtn" title="Vissza az elejére"><img src="https://cdn4.iconfinder.com/data/icons/navigation-40/24/to-up-1024.png" alt="" class="backtotop d-none d-sm-block"></button>
     </div>
 
-    
     
         
 
