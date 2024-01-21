@@ -1,44 +1,15 @@
 body {
     background-color: #121212;
-    /* background-color: white; */
+   
 }
-/* .navbar {
-    
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    border-radius: 30px;
-    border: 5px solid #05cdf5;
-    margin-bottom: 3rem;    
-    margin-top: 1.7rem;
-    
-} */
-
-@media screen and (min-width: 900px){
-    .navbar {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 55%;
-        font-size: 17px;
-        padding: 20px;
-    }
-    
-    
+.white-text-color {
+    color: white;
 }
-@media screen and (max-width: 1500px) and (min-width: 900px) {
-    .navbar {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 75%;
-        font-size: 17px;
-        padding: 20px;
-    }
+.text-justified {
+    text-align: justify;
 }
 .active {
-    margin-right: 20px;
+    margin-right: 1.8rem;
 }
 .logo {
     display: block;
@@ -48,10 +19,6 @@ body {
 }
 .logo2 {
     width: 100%;
-}
-.f-p {
-    color: white;
-    text-align: justify;
 }
 .hidden {
     opacity: 0;
@@ -91,27 +58,19 @@ body {
     text-align: center;
     padding: 2rem;
 }
-.text-tortenlme {
-    color: white;
-    text-align: justify;
-}
 .his-pic {
     display: block;
     margin-right: auto;
     margin-left: auto;
 }
 audio {
-    margin-top: 0.5rem;
-    
+    margin-top: 0.5rem;   
 }
 h3, h2 {
     color: #05cdf5;
 }
 .fel-pic{
     height: 35rem;
-}
-.fel-text {
-    color: white;
 }
 .reszek {
     color: red;
@@ -126,10 +85,64 @@ h3, h2 {
     border-top: 2px solid #3a4f50;
 }
 .f-btn {
-    color: #05cdf5;
+    color: #05cdf5;   
+}
+.toggler-color {
+background-color: #3a4f50;
+color: black;
+}
+.toggler-color:hover {
+    background-color: #05cdf5;
+}
+#FooterBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    
+  }
+#FooterBtn:hover {
+    background-color: #05cdf5;
+    color: white;
+}
+.backtotop {
+    width: 30px;
+    height: 30px;
+}
+#cop-tag {
+    margin-left: 1rem;
+}
+.navbar-kep {
+    width: 25px;
+    height: 25px;
     
 }
-@media screen and (min-width: 900px) {
+.navbar-toggler {
+    background-color: #05cdf5;
+    
+}
+@media screen and (min-width: 900px){
+    .navbar {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 55%;
+        font-size: 17px;
+        padding: 20px;
+    }
+    .fel-pic{
+        height: 35rem;
+        transition-delay: 500ms;
+    }
     .fo-btn {
         position: relative;
         text-decoration: none;
@@ -160,7 +173,8 @@ h3, h2 {
                 -webkit-transform: scaleX(1);
                 transform: scaleX(1);
             }   
-        }   
+        }  
+        
     }
     .alt-btn {
         position: relative;
@@ -193,57 +207,7 @@ h3, h2 {
                 transform: scaleX(1);
             }   
         }   
-    }
-    
-}
-
-.toggler-color {
-background-color: #3a4f50;
-color: black;
-}
-.toggler-color:hover {
-    background-color: #05cdf5;
-}
-#myBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color: white;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 4px;
-  }
-#myBtn:hover {
-    background-color: #05cdf5;
-    color: white;
-  }
-.backtotop {
-    width: 30px;
-    height: 30px;
-}
-#cop-tag {
-    margin-left: 1rem;
-}
-@media screen and (min-width: 900px){
-    .navbar {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 55%;
-        font-size: 17px;
-        padding: 20px;
-    }
-     
-}
-.navbar-kep {
-    width: 25px;
-    height: 25px;
+    } 
 }
 @media screen and (max-width: 900px) {
     .fo-btn {
@@ -261,11 +225,21 @@ color: black;
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }  
+}
+@media screen and (max-width: 1500px) and (min-width: 900px) {
+    .navbar {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        font-size: 17px;
+        padding: 20px;
     }
+}
+@media screen and (min-width: 900px) {
     
     
 }
-
-
 
 
