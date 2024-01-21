@@ -226,6 +226,10 @@ color: black;
         margin-left: auto;
         margin-right: auto;
     }  
+    .tort-img {
+        padding: 20px;
+        margin-bottom: 2.8rem;
+    }
 }
 @media screen and (max-width: 1500px) and (min-width: 900px) {
     .navbar {
@@ -241,5 +245,28 @@ color: black;
     
     
 }
-
+@media screen and (min-width: 1200px) {
+    .right-social-icon {
+        margin-right: 45px;
+    }
+    .zoom {
+        padding: 40px;
+        transition: transform .2s;    
+        margin: 0 auto;
+      }
+      
+    .zoom:hover {
+        transform: scale(1.2); 
+        
+    }
+}
+.teszt {
+    
+    box-shadow: 0 0.3rem 2.2rem 0 #05cdf5;
+}
+.tort-img {
+    padding: 10px;
+    border-radius: 50px;
+    
+}
 
